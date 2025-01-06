@@ -1,0 +1,27 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+class demo{
+    private long mobile;
+    public void SetMobile(long n){
+        int len = String.valueOf(n).length();
+        if(len==10)
+        {
+             mobile=n;
+        }
+        else
+        {
+           System.out.println("please enter valid mobile");
+        }
+    }
+    public long GetMobile(){
+        return mobile;
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        demo d=new demo();
+        d.SetMobile(9876543210L);
+      System.out.println(d.GetMobile());
+      
+    }
+}
